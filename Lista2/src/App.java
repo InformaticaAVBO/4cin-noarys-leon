@@ -19,6 +19,7 @@ public class App {
         lista.exists("EN: Hello");
         lista.exists("Prova 2 !!");
 
+        lista.remove("IT: Ciao");
         lista.remove("Prova !!");
         lista.remove("Prova 2 !!");
 

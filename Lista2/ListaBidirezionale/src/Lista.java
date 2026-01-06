@@ -40,7 +40,13 @@ public class Lista {
         if (root == null) {
             return;
         }
-        
+
+        if (root.getValore().equals(s)) {
+            root = root.getNext();
+            System.out.println("Il nodo con valore " + root.getValore() + " nella head è stato eliminato.");
+            return;
+        }
+
         Nodo previo = root;
         Nodo corrente = root.getNext();
 
@@ -78,5 +84,4 @@ public class Lista {
         }
         return s;
     }
-
 }
