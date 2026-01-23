@@ -6,7 +6,6 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         Porto porto = new Porto();
         
-        
         boolean continua = true;
         while (continua) {
             System.out.println("\n| GESTIONE PORTO |");
@@ -17,7 +16,7 @@ public class App {
             System.out.println("5. Cerca barche per nazionalita'");
             System.out.println("6. Visualizza posti occupati");
             System.out.println("0. Esci");
-            System.out.print("\nScegli un'opzione: ");
+            System.out.println("Scegli un'opzione: ");
             
             int scelta = scanner.nextInt();
             scanner.nextLine();            

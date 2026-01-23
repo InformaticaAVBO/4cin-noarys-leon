@@ -66,7 +66,6 @@ public class Porto {
         return costoTot;
     }
     
-    
     public String cercaBarca(int numeroPosto) throws Exception {
         if (numeroPosto < 1 || numeroPosto > maxPosti) {
             throw new Exception("Numero posto non valido.");
@@ -100,7 +99,6 @@ public class Porto {
         }
     }
     
-    
     /*public void stampaStatoFile(String nomeFile) {
         try (BufferedReader br = new BufferedReader(new FileReader(nomeFile))) {
         String s;
@@ -111,7 +109,6 @@ public class Porto {
             System.out.println("Errore nella scrittura del file" + ex.getMessage());
         }
     }*/
-
     
     public String[] barcheNazionalità(String nazionalità) {
         ArrayList<String> barche = new ArrayList<>();
@@ -143,4 +140,19 @@ public class Porto {
             System.out.println("Nessun posto è occupato :)");
         }
     }
+
+    /*@Override
+    public String toString() {
+        String s = "Il porto contiene le seguenti barche:\n";
+        for (int i = 0; i < posti.length(); i++) {
+            if (posti[i] == null) {
+                continue;
+            }
+
+            s += "Posto numero: " + (i + 1) + " " + posti[i] + "\n";
+        }
+
+        return s;
+    }*/
+
 }
